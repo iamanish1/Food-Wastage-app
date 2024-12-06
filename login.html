@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication - Food Wastage Calculator</title>
+    <link rel="stylesheet" href="auth-styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1>FoodWize</h1>
+            <p>Login or Sign Up to get started!</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="auth-container">
+            <!-- Login Form -->
+            <div class="form-container" id="login-form">
+                <h2>Login</h2>
+                <form>
+                    <div class="input-container">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" placeholder="Enter your password" required>
+                    </div>
+
+                    <button type="button" id="login-btn" class="btn-primary">Login</button>
+                </form>
+                <p class="toggle-form">Don't have an account? <span id="show-signup" class="toggle-link">Sign Up</span></p>
+            </div>
+
+            <!-- Sign Up Form -->
+            <div class="form-container hidden" id="signup-form">
+                <h2>Sign Up</h2>
+                <form>
+                    <div class="input-container">
+                        <label for="signup-name">Name</label>
+                        <input type="text" id="signup-name" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" placeholder="Create a password" required>
+                    </div>
+
+                    <button type="button" id="signup-btn" class="btn-primary">Sign Up</button>
+                </form>
+                <p class="toggle-form">Already have an account? <span id="show-login" class="toggle-link">Login</span></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Start your journey to reduce food wastage today!</p>
+    </footer>
+
+    <script src="auth.js"></script>
+</body>
+</html>

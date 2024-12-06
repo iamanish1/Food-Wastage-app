@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Wastage Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">FoodWize</h1>
+            <a href="login.html" class="btn primary-btn">Create Account</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Reduce Food Waste, One Step at a Time</h2>
+            <p>Join us in making smarter choices for a sustainable future. Calculate your food waste and learn actionable tips to minimize it.</p>
+            <a href="#calculator" class="btn secondary-btn"><button>Get Started</button></a>
+        </div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTatLiJAG6jse2XTu96VcidI8X5OYIvWzcenw&s" 
+        alt="Illustration of reducing food waste" class="hero-image">
+    </section>
+
+    <main>
+        <section id="calculator" class="calculator-section">
+            <div class="calculator-container">
+                <h2>Food Wastage Calculator</h2>
+                <p>Fill in the details below to calculate food wastage and get actionable tips.</p>
+                <form id="wastage-form">
+                    <label for="food-type">Select Food Type:</label>
+                    <select id="food-type">
+                        <option value="vegetables">Vegetables</option>
+                        <option value="fruits">Fruits</option>
+                        <option value="meat">Meat</option>
+                        <option value="dairy">Dairy</option>
+                        <option value="grains">Grains</option>
+                    </select>
+
+                    <label for="food-quantity">Enter Food Quantity (in kg):</label>
+                    <input type="number" id="food-quantity" placeholder="e.g., 2" min="0">
+
+                    <button type="button" id="calculate-btn" class="btn primary-btn">Calculate</button>
+                </form>
+
+                <div id="result" class="results-container">
+                    <h2>Results</h2>
+                    <div class="result-analysis">
+                        <p id="waste-estimation">Your results will appear here.</p>
+                        <div class="result-stats">
+                            <div class="stat">
+                                <p>Environmental Impact:</p>
+                                <div class="progress-bar">
+                                    <div id="impact-bar" class="bar-fill"></div>
+                                </div>
+                                <p id="impact-value">0%</p>
+                            </div>
+                            <div class="stat">
+                                <p>Cost of Wastage:</p>
+                                <div class="progress-bar">
+                                    <div id="cost-bar" class="bar-fill"></div>
+                                </div>
+                                <p id="cost-value">0 USD</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Tips to Reduce Wastage</h3>
+                    <ul id="tips">
+                        <!-- Tips will be dynamically added -->
+                    </ul>
+                    <div id="chart" class="result-chart">
+                        <!-- Placeholder for future chart integration -->
+                        <p>Data Visualization Coming Soon!</p>
+                    </div>
+                </div>                
+            </div>
+        </section>
+        <section class="testimonial-section">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial-container">
+                <div class="testimonial-card">
+                    <p>"This tool is amazing! It helped me understand how much food I was wasting and gave me actionable tips to reduce it."</p>
+                    <h3>- Priya Sharma</h3>
+                </div>
+                <div class="testimonial-card">
+                    <p>"A must-use tool for every household. Simple, efficient, and very insightful!"</p>
+                    <h3>- Rohan Verma</h3>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Thanks to this calculator, I've cut down on my food waste by 40%. Highly recommend!"</p>
+                    <h3>- Ananya Das</h3>
+                </div>
+            </div>
+        </section>
+          <!-- FAQ Section -->
+          <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3>How accurate is the food waste estimation?</h3>
+                    <p>The food waste estimation is based on general averages for each food type. The results may vary depending on various factors, such as storage conditions and local practices.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I use the tool for all types of food?</h3>
+                    <p>Yes! The calculator supports various food types such as vegetables, fruits, meats, dairy, and grains. We continually update the tool to include more food types in the future.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How can I reduce food waste at home?</h3>
+                    <p>Our calculator provides tips specific to each food type. You can also minimize food waste by planning meals in advance, storing food properly, and utilizing leftovers creatively.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FoodWize. All Rights Reserved. | Together Against Food Waste</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
